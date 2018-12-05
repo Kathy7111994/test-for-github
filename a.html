@@ -1,0 +1,38 @@
+<html>
+<haad>
+</haad>
+<body>
+	<ul>
+	    <li>item 1</li>
+	    <li>item 2</li>
+	</ul>
+	<ul>
+	    <li>item 2</li>
+	    <li>item 3</li>
+	</ul>
+</body>
+</html>
+<style>
+ul{
+	width: 100px;
+}
+ul li{
+	width: 50%;
+	float: left;
+}
+ul:nth-of-type(even) li{
+	width: 50%;
+	float: right;
+}
+ul{list-style:none}
+@media only screen and (max-width: 600px) {
+   ul li{
+	width: 100%;
+	float: right;
+}
+ul:nth-of-type(even) li{
+	width: 100%;
+	float: left;
+}
+}
+</style>
